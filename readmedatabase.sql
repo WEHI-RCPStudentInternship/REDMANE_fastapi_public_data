@@ -30,7 +30,6 @@ CREATE SEQUENCE public.datasets_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.datasets_id_seq OWNER TO postgres;
 
 SET default_tablespace = '';
 
@@ -50,7 +49,6 @@ CREATE TABLE public.datasets (
 );
 
 
-ALTER TABLE public.datasets OWNER TO postgres;
 
 --
 -- Name: datasets_metadata; Type: TABLE; Schema: public; Owner: postgres
@@ -64,7 +62,6 @@ CREATE TABLE public.datasets_metadata (
 );
 
 
-ALTER TABLE public.datasets_metadata OWNER TO postgres;
 
 --
 -- Name: datasets_metadata_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -79,7 +76,6 @@ CREATE SEQUENCE public.datasets_metadata_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.datasets_metadata_id_seq OWNER TO postgres;
 
 --
 -- Name: datasets_metadata_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -101,7 +97,6 @@ CREATE SEQUENCE public.datasets_new_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.datasets_new_id_seq OWNER TO postgres;
 
 --
 -- Name: datasets_new_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -123,7 +118,6 @@ CREATE TABLE public.files (
 );
 
 
-ALTER TABLE public.files OWNER TO postgres;
 
 --
 -- Name: files_metadata; Type: TABLE; Schema: public; Owner: postgres
@@ -137,7 +131,6 @@ CREATE TABLE public.files_metadata (
 );
 
 
-ALTER TABLE public.files_metadata OWNER TO postgres;
 
 --
 -- Name: patients; Type: TABLE; Schema: public; Owner: postgres
@@ -152,7 +145,6 @@ CREATE TABLE public.patients (
 );
 
 
-ALTER TABLE public.patients OWNER TO postgres;
 
 --
 -- Name: patients_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -167,7 +159,6 @@ CREATE SEQUENCE public.patients_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.patients_id_seq OWNER TO postgres;
 
 --
 -- Name: patients_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -188,7 +179,6 @@ CREATE TABLE public.patients_metadata (
 );
 
 
-ALTER TABLE public.patients_metadata OWNER TO postgres;
 
 --
 -- Name: patients_metadata_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -203,7 +193,6 @@ CREATE SEQUENCE public.patients_metadata_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.patients_metadata_id_seq OWNER TO postgres;
 
 --
 -- Name: patients_metadata_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -223,7 +212,6 @@ CREATE TABLE public.projects (
 );
 
 
-ALTER TABLE public.projects OWNER TO postgres;
 
 --
 -- Name: projects_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -238,7 +226,6 @@ CREATE SEQUENCE public.projects_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.projects_id_seq OWNER TO postgres;
 
 --
 -- Name: projects_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -260,7 +247,6 @@ CREATE SEQUENCE public.raw_files_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.raw_files_id_seq OWNER TO postgres;
 
 --
 -- Name: raw_files_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -282,7 +268,6 @@ CREATE SEQUENCE public.raw_files_metadata_metadata_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.raw_files_metadata_metadata_id_seq OWNER TO postgres;
 
 --
 -- Name: raw_files_metadata_metadata_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -303,7 +288,6 @@ CREATE TABLE public.samples (
 );
 
 
-ALTER TABLE public.samples OWNER TO postgres;
 
 --
 -- Name: samples_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -318,7 +302,6 @@ CREATE SEQUENCE public.samples_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.samples_id_seq OWNER TO postgres;
 
 --
 -- Name: samples_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -339,7 +322,6 @@ CREATE TABLE public.samples_metadata (
 );
 
 
-ALTER TABLE public.samples_metadata OWNER TO postgres;
 
 --
 -- Name: samples_metadata_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -354,7 +336,6 @@ CREATE SEQUENCE public.samples_metadata_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.samples_metadata_id_seq OWNER TO postgres;
 
 --
 -- Name: samples_metadata_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -720,7 +701,6 @@ ALTER TABLE ONLY public.samples
 -- Name: DEFAULT PRIVILEGES FOR TABLES; Type: DEFAULT ACL; Schema: public; Owner: postgres
 --
 
-ALTER DEFAULT PRIVILEGES FOR ROLE postgres IN SCHEMA public GRANT ALL ON TABLES  TO postgres;
 
 
 --
