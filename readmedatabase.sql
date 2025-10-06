@@ -125,7 +125,7 @@ CREATE TABLE public.files (
 
 CREATE TABLE public.files_metadata (
     metadata_id integer NOT NULL,
-    raw_file_id integer,
+    file_id integer,
     metadata_key text NOT NULL,
     metadata_value text NOT NULL
 );
@@ -435,7 +435,7 @@ COPY public.files (id, dataset_id, path, file_type) FROM stdin;
 -- Data for Name: files_metadata; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.files_metadata (metadata_id, raw_file_id, metadata_key, metadata_value) FROM stdin;
+COPY public.files_metadata (metadata_id, file_id, metadata_key, metadata_value) FROM stdin;
 \.
 
 
@@ -678,7 +678,7 @@ ALTER TABLE ONLY public.files
 --
 
 ALTER TABLE ONLY public.files_metadata
-    ADD CONSTRAINT raw_files_metadata_raw_file_id_fkey FOREIGN KEY (raw_file_id) REFERENCES public.files(id);
+    ADD CONSTRAINT raw_files_metadata_file_id_fkey FOREIGN KEY (file_id) REFERENCES public.files(id);
 
 
 --
